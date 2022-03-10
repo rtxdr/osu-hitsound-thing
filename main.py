@@ -11,6 +11,8 @@ filenameosu = ["drum-hitclap.wav","drum-hitfinish.wav", "drum-hitnormal.wav", "d
 "soft-hitclap.wav","soft-hitfinish.wav", "soft-hitnormal.wav", "soft-hitwhistle.wav", "soft-sliderslide.wav", "soft-slidertick.wav", "soft-sliderwhistle.wav"]
 base_hitsound = r'input/sound.wav'
 
+os.mkdir("out")
+
 for x in filenameosu:
     renamed_hitsound = r'out/' + x
     shutil.copyfile(base_hitsound, renamed_hitsound)
